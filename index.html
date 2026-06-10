@@ -1,353 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MK Telecom</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MK Telecom | Internet Fibra Óptica e Plano Móvel em Paulista-PE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-  <div class="glow-bg"></div>
+    <div class="glow-bg"></div>
 
-  <header>
-    <div class="logo">
-      <img src="./assets/nova_logo-removebg-preview.png" alt="MK Telecom" />
-    </div>
+    <header>
+        <div class="logo">
+            <img src="./assets/nova_logo-removebg-preview.png" alt="MK Telecom" />
+        </div>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-navigation" type="button">
-      <i data-lucide="menu"></i>
-    </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+            aria-controls="main-navigation" type="button">
+            <i data-lucide="menu"></i>
+        </button>
 
-    <nav id="main-navigation" aria-hidden="true">
-      <a href="#planos">Planos</a>
-      <a href="#movel">MK Móvel</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#cobertura">Cobertura</a>
-    </nav>
+        <nav id="main-navigation" aria-hidden="true">
+            <a href="#planos">Planos</a>
+            <a href="#movel">MK Móvel</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#cobertura">Cobertura</a>
+        </nav>
 
-    <a href="https://central.mktelecom.com.br" class="btn-client" target="_blank" rel="noopener noreferrer">
-      <i data-lucide="user"></i> Área do Cliente
+        <a href="https://mknet.sgp.net.br/accounts/central/login?next=/central/home/" class="btn-client" target="_blank"
+            rel="noopener noreferrer">
+            <i data-lucide="user"></i> Área do Cliente
+        </a>
+    </header>
+
+    <section class="hero" aria-label="Destaques da MK Telecom">
+        <div class="hero-content">
+            <div class="hero-copy">
+                <div class="tagline">Fibra Óptica de Alta Performance</div>
+                <h1>Conectando você em <span>todos os lugares!</span></h1>
+                <p>Internet ultraveloz com estabilidade digital e suporte especializado. Assine o plano perfeito para a
+                    sua casa ou escritório.</p>
+                <a href="https://wa.me/5581988776032" class="cta-main" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="phone"></i> Assine via WhatsApp
+                </a>
+            </div>
+
+            <div class="hero-carousel" role="region" aria-roledescription="carousel"
+                aria-label="Destaques promocionais">
+                <div class="carousel-track">
+                    <article class="carousel-slide active" aria-hidden="false">
+                        <span class="carousel-badge">Mais vendido</span>
+                        <h3>Plano Home Office</h3>
+                        <div class="carousel-speed">800 <span>MEGA</span></div>
+                        <p>Ideal para gamers, trabalho remoto e streaming com estabilidade máxima.</p>
+                        <a href="https://wa.me/5581988776032?text=Olá! Quero contratar o Plano Home Office de 800 Mega."
+                            class="carousel-btn" target="_blank" rel="noopener noreferrer">
+                            Quero esse plano
+                        </a>
+                    </article>
+
+                    <article class="carousel-slide" aria-hidden="true">
+                        <span class="carousel-badge orange">MK Móvel</span>
+                        <h3>30GB de Internet Móvel</h3>
+                        <div class="carousel-speed">R$ <span>39,90</span></div>
+                        <p>Ligações ilimitadas, WhatsApp sem limites e redes sociais liberadas.</p>
+                        <a href="https://wa.me/5581988776032?text=Olá! Quero saber sobre o plano MK Móvel de 30GB."
+                            class="carousel-btn" target="_blank" rel="noopener noreferrer">
+                            Quero MK Móvel
+                        </a>
+                    </article>
+
+                    <article class="carousel-slide" aria-hidden="true">
+                        <span class="carousel-badge blue">Combo Econômico</span>
+                        <h3>Fibra + Móvel</h3>
+                        <div class="carousel-speed">R$ <span>129,90</span></div>
+                        <p>O combo perfeito para quem quer internet fixa e móvel em um só pacote.</p>
+                        <a href="https://wa.me/5581988776032?text=Olá! Quero o combo Fibra + Móvel."
+                            class="carousel-btn" target="_blank" rel="noopener noreferrer">
+                            Quero o combo
+                        </a>
+                    </article>
+                </div>
+
+                <div class="carousel-controls">
+                    <button type="button" class="carousel-btn-nav" id="prev-slide" aria-label="Slide anterior">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+
+                    <div class="carousel-dots" role="tablist" aria-label="Escolher slide">
+                        <button type="button" class="dot active" aria-label="Ir para o slide 1"
+                            aria-pressed="true"></button>
+                        <button type="button" class="dot" aria-label="Ir para o slide 2" aria-pressed="false"></button>
+                        <button type="button" class="dot" aria-label="Ir para o slide 3" aria-pressed="false"></button>
+                    </div>
+
+                    <button type="button" class="carousel-btn-nav" id="next-slide" aria-label="Próximo slide">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+
+                    <button type="button" class="carousel-play" id="toggle-autoplay" aria-label="Pausar carrossel"
+                        aria-pressed="false">
+                        <i data-lucide="pause"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans-container" id="planos">
+        <div class="section-title">
+            <h2>Escolha seu Plano e Aproveite</h2>
+            <p class="section-subtitle">Turbine sua casa com Fibra Óptica ou economize ainda mais com nossos Combos com
+                Internet Móvel!</p>
+        </div>
+
+        <div class="grid-plans">
+            <div class="card card-green">
+                <div class="card-header">
+                    <h3>Plano Turbo</h3>
+                    <div class="velocity">250 <span>MEGA</span></div>
+                </div>
+                <div class="price">R$ 69,90<span>/mês</span></div>
+                <ul class="features-list">
+                    <div class="combo-mini-box">
+                        <span class="combo-tag">Econômico</span>
+                        <p>Leve Fibra + Móvel por</p>
+                        <div class="combo-price">R$ 99,90<span>/mês</span></div>
+                        <small><i data-lucide="plus"></i> 30GB de internet móvel + Ligações ilimitadas</small>
+                    </div>
+                    <li><i data-lucide="check-circle-2"></i> 250 Mega de Velocidade</li>
+                    <li><i data-lucide="check-circle-2"></i> Streaming Incluso</li>
+                    <li><i data-lucide="check-circle-2"></i> Wi-Fi de alta performance</li>
+                    <li><i data-lucide="check-circle-2"></i> Suporte especializado</li>
+                </ul>
+                <a href="https://wa.me/5581988776032?text=Olá! Quero contratar o Plano Turbo de 250 Mega por R$69,90."
+                    class="btn-plan" target="_blank" rel="noopener noreferrer">Contratar Agora</a>
+            </div>
+
+            <div class="card card-blue">
+                <div class="card-header">
+                    <h3>Plano Família</h3>
+                    <div class="velocity">500 <span>MEGA</span></div>
+                </div>
+                <div class="price">R$ 89,90<span>/mês</span></div>
+                <div class="combo-mini-box">
+                    <span class="combo-tag">RECOMENDADO</span>
+                    <p>Leve Fibra + Móvel por</p>
+                    <div class="combo-price">R$ 119,90<span>/mês</span></div>
+                    <small><i data-lucide="plus"></i> 30GB de internet móvel + Ligações ilimitadas</small>
+                </div>
+                <ul class="features-list">
+                    <li><i data-lucide="check-circle-2"></i> Conecte múltiplos dispositivos</li>
+                    <li><i data-lucide="check-circle-2"></i> Streaming incluso + TV Online</li>
+                    <li><i data-lucide="check-circle-2"></i> Suporte Especializado</li>
+                    <li><i data-lucide="check-circle-2"></i> Wi-Fi de alta performance</li>
+                </ul>
+                <a href="https://wa.me/5581988776032?text=Olá! Quero saber mais sobre o Combo Família de 500 Mega por R$119,90."
+                    class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
+            </div>
+
+            <div class="card card-purple featured">
+                <div class="badge">Mais Vendido</div>
+                <div class="card-header">
+                    <h3>Home Office</h3>
+                    <div class="velocity">800 <span>MEGA</span></div>
+                </div>
+                <div class="price">R$ 99,90<span>/mês</span></div>
+                <div class="combo-mini-box highlighted">
+                    <span class="combo-tag text-orange">COMBO TOP ECONOMIA</span>
+                    <p>Leve Fibra + Móvel por</p>
+                    <div class="combo-price">R$ 129,90<span>/mês</span></div>
+                    <small><i data-lucide="plus"></i> 30GB de internet móvel + Redes Ilimitadas</small>
+                </div>
+                <ul class="features-list">
+                    <li><i data-lucide="check-circle-2"></i> Ideal para Gamers & Home Office</li>
+                    <li><i data-lucide="check-circle-2"></i> Streaming incluso + TV Online</li>
+                    <li><i data-lucide="check-circle-2"></i> Suporte Especializado</li>
+                    <li><i data-lucide="check-circle-2"></i> Wi-Fi de alta performance</li>
+                </ul>
+                <a href="https://wa.me/5581988776032?text=Olá! Quero o Combo Home Office campeão de vendas de R$129,90."
+                    class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
+            </div>
+
+            <div class="card card-orange">
+                <div class="card-header">
+                    <h3>Plano Ultra</h3>
+                    <div class="velocity">1 <span>GIGA</span></div>
+                </div>
+                <div class="price">R$ 109,90<span>/mês</span></div>
+                <div class="combo-mini-box">
+                    <span class="combo-tag">MÁXIMA VELOCIDADE</span>
+                    <p>Leve Fibra + Móvel por</p>
+                    <div class="combo-price">R$ 139,90<span>/mês</span></div>
+                    <small><i data-lucide="plus"></i> 1 Giga Fibra + 30GB Móvel + Câmera Wi-Fi*</small>
+                </div>
+                <ul class="features-list">
+                    <li><i data-lucide="check-circle-2"></i> Perfeito para o seu negócio</li>
+                    <li><i data-lucide="check-circle-2"></i> Streaming incluso + TV Online</li>
+                    <li><i data-lucide="check-circle-2"></i> Suporte Especializado</li>
+                    <li><i data-lucide="check-circle-2"></i> Wi-Fi de alta performance</li>
+                </ul>
+                <a href="https://wa.me/5581988776032?text=Olá! Quero o Combo Ultra de 1 Giga por R$139,90 com chip móvel."
+                    class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-highlight-container" id="movel">
+        <div class="mobile-glow"></div>
+
+        <div class="mobile-wrapper">
+            <div class="mobile-info-text">
+                <div class="tagline-movel">Novidade Exclusiva</div>
+                <h2>O melhor plano de telefonia móvel agora é da <span>MK Móvel</span>!</h2>
+                <p>Tenha internet de alta performance fora de casa com a estabilidade da rede que você já confia. Fique
+                    conectado onde quer que vá.</p>
+
+                <div class="mobile-showcase-price">
+                    <div class="big-gb">30<span>GB</span></div>
+                    <div class="price-block">
+                        <p>Por apenas</p>
+                        <h3>R$ 39,90<span>/mês</span></h3>
+                    </div>
+                </div>
+
+                <ul class="mobile-benefits-list">
+                    <li><i data-lucide="phone-call"></i> Ligações ilimitadas para todo o Brasil</li>
+                    <li><i data-lucide="message-square-text"></i> WhatsApp 100% Ilimitado</li>
+                    <li><i data-lucide="share-2"></i> Redes sociais (Instagram e Facebook, Waze) ilimitadas</li>
+                    <li><i data-lucide="signal"></i> Com a melhor cobertura do Brasil</li>
+                </ul>
+
+                <a href="https://wa.me/5581988776032?text=Olá! Vi o plano MK Móvel de 30GB por R$39,90 no site e quero solicitar meu chip."
+                    target="_blank" rel="noopener noreferrer" class="cta-movel">
+                    <i data-lucide="message-circle"></i> Assine Agora via WhatsApp
+                </a>
+            </div>
+
+            <div class="mobile-graphic-side">
+                <div class="phone-frame">
+                    <div class="screen-glow"></div>
+                    <img src="./assets/mascote sem fundo.png" alt="Imagem do mascote" />
+                    <i data-lucide="signal" class="signal-icon"></i>
+                    <span class="badge-4g">5G Ready</span>
+                    <div class="phone-data-display">
+                        <h4>MK MÓVEL</h4>
+                        <div class="progress-bar-mock"></div>
+                        <p>Dados Disponíveis: 30 GB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-container" id="beneficios">
+        <div class="section-title">
+            <h2>Por que escolher a <span>MK Telecom</span>?</h2>
+            <p class="section-subtitle">Diga adeus às quedas de conexão e experimente a verdadeira estabilidade digital.
+            </p>
+        </div>
+
+        <div class="grid-benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon icon-orange"><i data-lucide="zap"></i></div>
+                <h3>Ultra Velocidade</h3>
+                <p>Conexão via fibra óptica pura de ponta a ponta.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon icon-blue"><i data-lucide="shield-check"></i></div>
+                <h3>100% Estabilidade</h3>
+                <p>Esqueça oscilações no meio da sua partida online, reunião ou maratona de séries.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon icon-purple"><i data-lucide="wifi"></i></div>
+                <h3>Roteador Wi-Fi Premium</h3>
+                <p>Equipamentos de última geração para garantir sinal forte em todos os cômodos.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon icon-green"><i data-lucide="headphones"></i></div>
+                <h3>Suporte Técnico Local</h3>
+                <p>Atendimento humanizado, rápido e sem complicações.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="coverage-container" id="cobertura">
+        <div class="coverage-content">
+            <div class="coverage-text">
+                <div class="tagline">Disponibilidade</div>
+                <h2>Já estamos na sua região?</h2>
+                <p>Expanda sua rede de fibra óptica diariamente. Confira algumas das áreas atendidas:</p>
+
+                <ul class="location-list">
+                    <li><i data-lucide="map-pin"></i> Janga</li>
+                    <li><i data-lucide="map-pin"></i> Pau Amarelo</li>
+                    <li><i data-lucide="map-pin"></i> Conceição</li>
+                    <li><i data-lucide="map-pin"></i> Em breve Maria Farinha</li>
+                </ul>
+
+                <div class="search-container">
+                    <div class="search-box-interactive">
+                        <input type="text" id="cep-input" placeholder="Digite seu CEP (Ex: 00000-000)" maxlength="9" />
+                        <button type="button" id="btn-consultar" class="btn-search">
+                            <i data-lucide="search"></i> Consultar
+                        </button>
+                    </div>
+                    <div id="coverage-feedback" class="feedback-message"></div>
+                </div>
+            </div>
+
+            <div class="coverage-map-wrapper">
+                <div class="map-mock">
+                    <div class="map-pulse"></div>
+                    <div class="map-pulse delay-1"></div>
+                    <div class="map-card-info">
+                        <i data-lucide="globe" class="globe-icon"></i>
+                        <h4>Rede 100% Fibra Óptica</h4>
+                        <p>Consulte viabilidade em tempo real com nossos atendentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-footer">
+                    <img src="./assets/nova_logo-removebg-preview.png" alt="MK Telecom" />
+                </div>
+                <p>Siga-nos em nossas redes sociais e baixe também nosso aplicativo!</p>
+                <div class="footer-socials" aria-label="Redes sociais">
+                    <a class="insta-app" href="https://www.instagram.com/mk_scm?igsh=MWhicDV1cGhjYm5zNw==" aria-label="Instagram"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.rog3r.mknet&hl=pt_BR" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <img class="img-app" src="./assets/nova logo.png" alt="app MK Telecom">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#planos">Nossos Planos</a></li>
+                    <li><a href="#movel">MK Móvel</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#cobertura">Área de Cobertura</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Suporte ao Cliente</h4>
+                <ul>
+                    <li><i data-lucide="phone"></i> (81) 98877-6032/(81) 99870-1583</li>
+                    <li><i data-lucide="mail"></i> mkservicos@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MK Telecom. Todos os direitos reservados.</p>
+            <p class="developer-credit">Desenvolvido por <span>Ismael Vieira</span></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5581988776032?text=Olá! Estou navegando no site da MK Telecom e gostaria de tirar uma dúvida."
+        class="whatsapp-fixed-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <i data-lucide="message-circle"></i>
+        <span class="tooltip-text">Fale Conosco</span>
     </a>
-  </header>
 
-  <section class="hero" aria-label="Destaques da MK Telecom">
-    <div class="hero-content">
-      <div class="hero-copy">
-        <div class="tagline">Fibra Óptica de Alta Performance</div>
-        <h1>Conectando você em <span>todos os lugares!</span></h1>
-        <p>Internet ultraveloz com estabilidade digital e suporte especializado. Assine o plano perfeito para a sua casa ou escritório.</p>
-        <a href="https://wa.me/5581988776032" class="cta-main" target="_blank" rel="noopener noreferrer">
-          <i data-lucide="phone"></i> Assine via WhatsApp
-        </a>
-      </div>
-
-      <div class="hero-carousel" role="region" aria-roledescription="carousel" aria-label="Destaques promocionais">
-        <div class="carousel-track">
-          <article class="carousel-slide active" aria-hidden="false">
-            <span class="carousel-badge">Mais vendido</span>
-            <h3>Plano Home Office</h3>
-            <div class="carousel-speed">800 <span>MEGA</span></div>
-            <p>Ideal para gamers, trabalho remoto e streaming com estabilidade máxima.</p>
-            <a href="https://wa.me/5581988776032?text=Olá! Quero contratar o Plano Home Office de 800 Mega." class="carousel-btn" target="_blank" rel="noopener noreferrer">
-              Quero esse plano
-            </a>
-          </article>
-
-          <article class="carousel-slide" aria-hidden="true">
-            <span class="carousel-badge orange">MK Móvel</span>
-            <h3>30GB de Internet Móvel</h3>
-            <div class="carousel-speed">R$ <span>39,90</span></div>
-            <p>Ligações ilimitadas, WhatsApp sem limites e redes sociais liberadas.</p>
-            <a href="https://wa.me/5581988776032?text=Olá! Quero saber sobre o plano MK Móvel de 30GB." class="carousel-btn" target="_blank" rel="noopener noreferrer">
-              Quero MK Móvel
-            </a>
-          </article>
-
-          <article class="carousel-slide" aria-hidden="true">
-            <span class="carousel-badge blue">Combo Econômico</span>
-            <h3>Fibra + Móvel</h3>
-            <div class="carousel-speed">R$ <span>129,90</span></div>
-            <p>O combo perfeito para quem quer internet fixa e móvel em um só pacote.</p>
-            <a href="https://wa.me/5581988776032?text=Olá! Quero o combo Fibra + Móvel." class="carousel-btn" target="_blank" rel="noopener noreferrer">
-              Quero o combo
-            </a>
-          </article>
-        </div>
-
-        <div class="carousel-controls">
-          <button type="button" class="carousel-btn-nav" id="prev-slide" aria-label="Slide anterior">
-            <i data-lucide="chevron-left"></i>
-          </button>
-
-          <div class="carousel-dots" role="tablist" aria-label="Escolher slide">
-            <button type="button" class="dot active" aria-label="Ir para o slide 1" aria-pressed="true"></button>
-            <button type="button" class="dot" aria-label="Ir para o slide 2" aria-pressed="false"></button>
-            <button type="button" class="dot" aria-label="Ir para o slide 3" aria-pressed="false"></button>
-          </div>
-
-          <button type="button" class="carousel-btn-nav" id="next-slide" aria-label="Próximo slide">
-            <i data-lucide="chevron-right"></i>
-          </button>
-
-          <button type="button" class="carousel-play" id="toggle-autoplay" aria-label="Pausar carrossel" aria-pressed="false">
-            <i data-lucide="pause"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="plans-container" id="planos">
-    <div class="section-title">
-      <h2>Escolha seu Plano e Aproveite</h2>
-      <p class="section-subtitle">Turbine sua casa com Fibra Óptica ou economize ainda mais com nossos Combos com Internet Móvel!</p>
-    </div>
-
-    <div class="grid-plans">
-      <div class="card card-green">
-        <div class="card-header">
-          <h3>Plano Turbo</h3>
-          <div class="velocity">250 <span>MEGA</span></div>
-        </div>
-        <div class="price">R$ 69,90<span>/mês</span></div>
-        <ul class="features-list">
-          <li><i data-lucide="check-circle-2"></i> 250 Mega de Velocidade</li>
-          <li><i data-lucide="check-circle-2"></i> Streaming Incluso</li>
-          <li><i data-lucide="check-circle-2"></i> Wi-Fi de alta performance</li>
-          <li><i data-lucide="check-circle-2"></i> Suporte especializado</li>
-        </ul>
-        <a href="https://wa.me/5581988776032?text=Olá! Quero contratar o Plano Turbo de 250 Mega por R$69,90." class="btn-plan" target="_blank" rel="noopener noreferrer">Contratar Agora</a>
-      </div>
-
-      <div class="card card-blue">
-        <div class="card-header">
-          <h3>Plano Família</h3>
-          <div class="velocity">500 <span>MEGA</span></div>
-        </div>
-        <div class="price">R$ 89,90<span>/mês</span></div>
-        <div class="combo-mini-box">
-          <span class="combo-tag">RECOMENDADO</span>
-          <p>Leve Fibra + Móvel por</p>
-          <div class="combo-price">R$ 119,90<span>/mês</span></div>
-          <small><i data-lucide="plus"></i> 30GB de internet móvel + Ligações ilimitadas</small>
-        </div>
-        <ul class="features-list">
-          <li><i data-lucide="check-circle-2"></i> Streaming incluso + TV Online</li>
-          <li><i data-lucide="check-circle-2"></i> Conecte múltiplos dispositivos</li>
-          <li><i data-lucide="check-circle-2"></i> Suporte especializado</li>
-        </ul>
-        <a href="https://wa.me/5581988776032?text=Olá! Quero saber mais sobre o Combo Família de 500 Mega por R$119,90." class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
-      </div>
-
-      <div class="card card-purple featured">
-        <div class="badge">Mais Vendido</div>
-        <div class="card-header">
-          <h3>Home Office</h3>
-          <div class="velocity">800 <span>MEGA</span></div>
-        </div>
-        <div class="price">R$ 99,90<span>/mês</span></div>
-        <div class="combo-mini-box highlighted">
-          <span class="combo-tag text-orange">COMBO TOP ECONOMIA</span>
-          <p>Leve Fibra + Móvel por</p>
-          <div class="combo-price">R$ 129,90<span>/mês</span></div>
-          <small><i data-lucide="plus"></i> 30GB de internet móvel + Redes Ilimitadas</small>
-        </div>
-        <ul class="features-list">
-          <li><i data-lucide="check-circle-2"></i> Ideal para Gamers & Home Office</li>
-          <li><i data-lucide="check-circle-2"></i> Streaming incluso + TV Online</li>
-          <li><i data-lucide="check-circle-2"></i> Suporte Prioritário</li>
-        </ul>
-        <a href="https://wa.me/5581988776032?text=Olá! Quero o Combo Home Office campeão de vendas de R$129,90." class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
-      </div>
-
-      <div class="card card-orange">
-        <div class="card-header">
-          <h3>Plano Ultra</h3>
-          <div class="velocity">1 <span>GIGA</span></div>
-        </div>
-        <div class="price">R$ 109,90<span>/mês</span></div>
-        <div class="combo-mini-box">
-          <span class="combo-tag">MÁXIMA VELOCIDADE</span>
-          <p>Leve Fibra + Móvel por</p>
-          <div class="combo-price">R$ 139,90<span>/mês</span></div>
-          <small><i data-lucide="plus"></i> 1 Giga Fibra + 30GB Móvel + Câmera Wi-Fi*</small>
-        </div>
-        <ul class="features-list">
-          <li><i data-lucide="check-circle-2"></i> Perfeito para múltiplos dispositivos</li>
-          <li><i data-lucide="check-circle-2"></i> Suporte Especializado Premium</li>
-        </ul>
-        <a href="https://wa.me/5581988776032?text=Olá! Quero o Combo Ultra de 1 Giga por R$139,90 com chip móvel." class="btn-plan" target="_blank" rel="noopener noreferrer">Quero o Combo</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="mobile-highlight-container" id="movel">
-    <div class="mobile-glow"></div>
-
-    <div class="mobile-wrapper">
-      <div class="mobile-info-text">
-        <div class="tagline-movel">Novidade Exclusiva</div>
-        <h2>O melhor plano de telefonia móvel agora é da <span>MK Móvel</span>!</h2>
-        <p>Tenha internet de alta performance fora de casa com a estabilidade da rede que você já confia. Fique conectado onde quer que vá.</p>
-
-        <div class="mobile-showcase-price">
-          <div class="big-gb">30<span>GB</span></div>
-          <div class="price-block">
-            <p>Por apenas</p>
-            <h3>R$ 39,90<span>/mês</span></h3>
-          </div>
-        </div>
-
-        <ul class="mobile-benefits-list">
-          <li><i data-lucide="phone-call"></i> Ligações ilimitadas para todo o Brasil</li>
-          <li><i data-lucide="message-square-text"></i> WhatsApp 100% Ilimitado</li>
-          <li><i data-lucide="share-2"></i> Redes sociais (Instagram e Facebook) ilimitadas</li>
-          <li><i data-lucide="ban"></i> Sem fidelidade contratual adicional</li>
-        </ul>
-
-        <a href="https://wa.me/5581988776032?text=Olá! Vi o plano MK Móvel de 30GB por R$39,90 no site e quero solicitar meu chip." target="_blank" rel="noopener noreferrer" class="cta-movel">
-          <i data-lucide="message-circle"></i> Assine Agora via WhatsApp
-        </a>
-      </div>
-
-      <div class="mobile-graphic-side">
-        <div class="phone-frame">
-          <div class="screen-glow"></div>
-          <img src="./assets/mascote sem fundo.png" alt="Imagem do mascote" />
-          <i data-lucide="signal" class="signal-icon"></i>
-          <span class="badge-4g">5G Ready</span>
-          <div class="phone-data-display">
-            <h4>MK MÓVEL</h4>
-            <div class="progress-bar-mock"></div>
-            <p>Dados Disponíveis: 30 GB</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="benefits-container" id="beneficios">
-    <div class="section-title">
-      <h2>Por que escolher a <span>MK Telecom</span>?</h2>
-      <p class="section-subtitle">Diga adeus às quedas de conexão e experimente a verdadeira estabilidade digital.</p>
-    </div>
-
-    <div class="grid-benefits">
-      <div class="benefit-card">
-        <div class="benefit-icon icon-orange"><i data-lucide="zap"></i></div>
-        <h3>Ultra Velocidade</h3>
-        <p>Conexão via fibra óptica pura de ponta a ponta.</p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon icon-blue"><i data-lucide="shield-check"></i></div>
-        <h3>100% Estabilidade</h3>
-        <p>Esqueça oscilações no meio da sua partida online, reunião ou maratona de séries.</p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon icon-purple"><i data-lucide="wifi"></i></div>
-        <h3>Roteador Wi-Fi Premium</h3>
-        <p>Equipamentos de última geração para garantir sinal forte em todos os cômodos.</p>
-      </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon icon-green"><i data-lucide="headphones"></i></div>
-        <h3>Suporte Técnico Local</h3>
-        <p>Atendimento humanizado, rápido e sem complicações.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="coverage-container" id="cobertura">
-    <div class="coverage-content">
-      <div class="coverage-text">
-        <div class="tagline">Disponibilidade</div>
-        <h2>Já estamos na sua região?</h2>
-        <p>Expanda sua rede de fibra óptica diariamente. Confira algumas das áreas atendidas:</p>
-
-        <ul class="location-list">
-          <li><i data-lucide="map-pin"></i> Centro e Região Comercial</li>
-          <li><i data-lucide="map-pin"></i> Bairros Residenciais Zona Norte</li>
-          <li><i data-lucide="map-pin"></i> Condomínios e Expansão Sul</li>
-          <li><i data-lucide="map-pin"></i> Distritos Industriais</li>
-        </ul>
-
-        <div class="search-container">
-          <div class="search-box-interactive">
-            <input type="text" id="cep-input" placeholder="Digite seu CEP (Ex: 00000-000)" maxlength="9" />
-            <button type="button" id="btn-consultar" class="btn-search">
-              <i data-lucide="search"></i> Consultar
-            </button>
-          </div>
-          <div id="coverage-feedback" class="feedback-message"></div>
-        </div>
-      </div>
-
-      <div class="coverage-map-wrapper">
-        <div class="map-mock">
-          <div class="map-pulse"></div>
-          <div class="map-pulse delay-1"></div>
-          <div class="map-card-info">
-            <i data-lucide="globe" class="globe-icon"></i>
-            <h4>Rede 100% Fibra Óptica</h4>
-            <p>Consulte viabilidade em tempo real com nossos atendentes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="main-footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <div class="logo-footer">
-          <img src="./assets/logo_branca-removebg-preview.png" alt="MK Telecom" />
-        </div>
-        <p>Conectando você ao futuro com a ultravelocidade da fibra óptica pura.</p>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/mk_scm?igsh=MWhicDV1cGhjYm5zNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i data-lucide="instagram"></i></a>
-          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-          <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-links">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="#planos">Nossos Planos</a></li>
-          <li><a href="#movel">MK Móvel</a></li>
-          <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#cobertura">Área de Cobertura</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Suporte ao Cliente</h4>
-        <ul>
-          <li><i data-lucide="phone"></i> (81) 98877-6032</li>
-          <li><i data-lucide="mail"></i> contato@mktelecom.com.br</li>
-          <li><i data-lucide="clock"></i> Suporte Técnico: 24/7</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 MK Telecom. Todos os direitos reservados.</p>
-      <p class="developer-credit">Desenvolvido por <span>Ismael Vieira</span></p>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/5581988776032?text=Olá! Estou navegando no site da MK Telecom e gostaria de tirar uma dúvida."
-     class="whatsapp-fixed-btn"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Fale conosco pelo WhatsApp">
-    <i data-lucide="message-circle"></i>
-    <span class="tooltip-text">Fale Conosco</span>
-  </a>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
