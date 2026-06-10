@@ -1079,7 +1079,8 @@ nav a:focus-visible::after {
 
 .footer-socials {
   display: flex;
-  gap: 20px;
+  margin-left: 70px;
+  gap: 30px;
   align-items: center;
 }
 
