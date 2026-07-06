@@ -39,7 +39,9 @@ body {
   overflow-x: clip;
   line-height: 1.6;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 img {
   max-width: 100%;
   display: block;
@@ -350,6 +352,32 @@ nav a:focus-visible::after {
   gap: 10px;
   flex: 1;
   justify-content: center;
+}
+
+/* ==========================
+   Banner Promocional
+========================== */
+
+.promo-banner{
+    width:100%;
+    margin:60px 0;
+    overflow:hidden;
+}
+
+.promo-banner a{
+    display:block;
+}
+
+.promo-banner img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.promo-banner img:hover{
+    transform:scale(1.02);
 }
 
 .dot {

@@ -10,11 +10,15 @@
 </head>
 
 <body>
+
+    <body id="inicio"></body>
     <div class="glow-bg"></div>
 
     <header>
         <div class="logo">
-            <img src="./assets/nova_logo-removebg-preview.png" alt="MK Telecom" />
+            <a href="#inicio" aria-label="Voltar ao início">
+                <img src="./assets/logo_branca-removebg-preview.png" alt="MK Telecom">
+            </a>
         </div>
 
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
@@ -29,13 +33,13 @@
             <a href="#cobertura">Cobertura</a>
         </nav>
         <div class="header-actions">
-      <a href="https://www.speedtest.net/pt" class="btn-speedtest" target="_blank" rel="noopener noreferrer">
-        <i data-lucide="gauge"></i> Teste de Velocidade
-      </a>
-        <a href="https://mknet.sgp.net.br/accounts/central/login?next=/central/home/" class="btn-client" target="_blank"
-            rel="noopener noreferrer">
-            <i data-lucide="user"></i> Área do Cliente
-        </a>
+            <a href="https://www.speedtest.net/pt" class="btn-speedtest" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="gauge"></i> Teste de Velocidade
+            </a>
+            <a href="https://mknet.sgp.net.br/accounts/central/login?next=/central/home/" class="btn-client"
+                target="_blank" rel="noopener noreferrer">
+                <i data-lucide="user"></i> Área do Cliente
+            </a>
     </header>
 
     <section class="hero" aria-label="Destaques da MK Telecom">
@@ -111,7 +115,11 @@
             </div>
         </div>
     </section>
-
+    <section class="promo-banner">
+        <a href="https://wa.me/5581988776032" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/wifi na casa toda.png" alt="Promoção MK Telecom" loading="lazy">
+        </a>
+    </section>
     <section class="plans-container" id="planos">
         <div class="section-title">
             <h2>Escolha seu Plano e Aproveite</h2>
@@ -337,10 +345,11 @@
                 <div class="logo-footer">
                     <img src="./assets/nova_logo-removebg-preview.png" alt="MK Telecom" />
                 </div>
-                <p>Fique por dentro de todas as novidades, siga-nos em nossas redes sociais e baixe nosso aplicativo!</p>
+                <p>Fique por dentro de todas as novidades, siga-nos em nossas redes sociais e baixe nosso aplicativo!
+                </p>
                 <div class="footer-socials" aria-label="Redes sociais">
-                    <a class="insta-app" href="https://www.instagram.com/mk_scm?igsh=MWhicDV1cGhjYm5zNw==" aria-label="Instagram"
-                        target="_blank" rel="noopener noreferrer">
+                    <a class="insta-app" href="https://www.instagram.com/mk_scm?igsh=MWhicDV1cGhjYm5zNw=="
+                        aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
@@ -350,8 +359,9 @@
                         </svg>
                     </a>
 
-                    <a href="https://play.google.com/store/apps/details?id=com.rog3r.mknet&hl=pt_BR" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                    <img class="img-app" src="./assets/nova logo.png" alt="app MK Telecom">
+                    <a href="https://play.google.com/store/apps/details?id=com.rog3r.mknet&hl=pt_BR"
+                        aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <img class="img-app" src="./assets/nova logo.png" alt="app MK Telecom">
                     </a>
                 </div>
             </div>
